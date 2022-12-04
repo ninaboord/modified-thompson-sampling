@@ -30,7 +30,6 @@ def thompson(prob_A, prob_B, trials):
             chooseA(prob_A, history)
         else:
             chooseB(prob_B, history)
-    #print(history)
     return history['A']['s'] + history['B']['s']
 
 
@@ -46,7 +45,6 @@ def mean_beta(prob_A, prob_B, trials):
             chooseA(prob_A, history)
         else:
             chooseB(prob_B, history)
-    #print(history)
     return history['A']['s'] + history['B']['s']
 
 
@@ -69,7 +67,6 @@ def modified_thompson(prob_A, prob_B, trials, epsilon):
             chooseA(prob_A, history)
         else:
             chooseB(prob_B, history)
-    #print(history)
     return history['A']['s'] + history['B']['s']
 
 
@@ -97,7 +94,6 @@ def epsilon_greedy(prob_A, prob_B, trials, epsilon):
                 chooseA(prob_A, history)
             else:
                 chooseB(prob_B, history)
-    #print(history)
     return history['A']['s'] + history['B']['s']
 
 
@@ -120,7 +116,6 @@ def epsilon_greedy_dec(prob_A, prob_B, trials):
             else:
                 chooseB(prob_B, history)
         actions += 1
-    #print(history)
     return history['A']['s'] + history['B']['s']
 
 
